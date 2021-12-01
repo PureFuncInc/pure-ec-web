@@ -8,6 +8,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@hookform/resolvers": "^2.8.3",
     "@stitches/react": "^1.2.5",
     "iron-session": "^6.0.3",
     "ky": "^0.28.7",
@@ -17,7 +18,9 @@
     "passport-google-oauth": "^2.0.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "swr": "^1.0.1"
+    "react-hook-form": "^7.20.5",
+    "swr": "^1.0.1",
+    "zod": "^3.11.6"
   },
   "devDependencies": {
     "@purefuncinc/eslint-config": "^0.0.3",
