@@ -1,7 +1,7 @@
 import type { AppProps } from 'next/app'
-import SWRConfig from 'swr/dist/utils/config-context'
 import type { SWRConfiguration } from 'swr'
-import type { Options } from 'got'
+import { SWRConfig } from 'swr'
+import type { Options } from 'ky'
 import { fetcher } from '@/utilities/fetcher'
 import { reset } from '@/styles/reset'
 
