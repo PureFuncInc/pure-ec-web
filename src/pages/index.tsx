@@ -1,8 +1,16 @@
-import type { NextPage } from 'next'
+import type { GetServerSideProps, NextPage } from 'next'
 import Head from 'next/head'
+import Link from 'next/link'
 import { styled } from '@/utilities/stitches'
+import { extractHostInfo } from '@/utilities/extractors/extractHostInfo'
 
-const HomePage: NextPage = () => {
+export interface HomePageServerSideProps {
+  host: string | undefined
+}
+
+const HomePage: NextPage<HomePageServerSideProps> = ({
+  host,
+}) => {
   return (
     <>
       <Head>
@@ -13,14 +21,28 @@ const HomePage: NextPage = () => {
 
       <main>
         <Title>
-          Create Next App
+          {host}
         </Title>
+
+        <Link href='/api/auth/google'>
+          Sign in with Google
+        </Link>
       </main>
     </>
   )
 }
 
 export default HomePage
+
+export const getServerSideProps: GetServerSideProps<HomePageServerSideProps> = async ({ req }) => {
+  const { host } = extractHostInfo(req)
+
+  return {
+    props: {
+      host,
+    },
+  }
+}
 
 const Title = styled('h1', {
   color: 'hotpink',
