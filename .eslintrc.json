@@ -2,6 +2,7 @@
   "extends": [
     "next/core-web-vitals",
     "@purefuncinc",
-    "@purefuncinc/react"
+    "@purefuncinc/react",
+    "@purefuncinc/jest"
   ]
 }
