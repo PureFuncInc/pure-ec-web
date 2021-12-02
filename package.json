@@ -5,7 +5,8 @@
     "dev": "PORT=3004 next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "jest"
   },
   "dependencies": {
     "@hookform/resolvers": "^2.8.3",
@@ -24,13 +25,18 @@
   },
   "devDependencies": {
     "@purefuncinc/eslint-config": "^0.0.3",
+    "@purefuncinc/eslint-config-jest": "^0.1.0",
     "@purefuncinc/eslint-config-react": "^0.0.3",
+    "@testing-library/jest-dom": "^5.15.1",
+    "@testing-library/react": "^12.1.2",
     "@types/node": "16.11.11",
     "@types/passport": "^1.0.7",
     "@types/passport-google-oauth": "^1.0.42",
     "@types/react": "17.0.37",
     "eslint": "7",
     "eslint-config-next": "12.0.4",
+    "jest": "^27.4.2",
+    "ts-node": "^10.4.0",
     "typescript": "4.5.2"
   }
 }

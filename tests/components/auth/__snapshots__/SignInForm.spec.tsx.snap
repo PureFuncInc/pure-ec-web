@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SignInForm should render component 1`] = `
+<div>
+  <form>
+    <label
+      for="email"
+    >
+      Email
+    </label>
+    <input
+      class="c-cooaiI c-cooaiI-dXoRhu-variant-primary"
+      name="email"
+      type="email"
+    />
+    <label
+      for="password"
+    >
+      Password
+    </label>
+    <input
+      class="c-cooaiI"
+      name="password"
+      type="password"
+    />
+    <button
+      type="submit"
+    >
+      Submit
+    </button>
+  </form>
+</div>
+`;
