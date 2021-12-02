@@ -54,6 +54,8 @@
 * [Passport](https://passportjs.org/)
 * [SWR](https://swr.vercel.app/)
 * [Zod](https://github.com/colinhacks/zod)
+* [Jest](https://jestjs.io)
+* [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
